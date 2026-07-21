@@ -1,0 +1,15 @@
+/target/
+**/*.rs.bk
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+filamentbestand.db
+*.db-wal
+*.db-shm
+backups/
