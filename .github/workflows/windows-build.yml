@@ -1,0 +1,41 @@
+name: Windows Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Rust installieren
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cargo-Cache
+        uses: Swatinem/rust-cache@v2
+
+      - name: Release erstellen
+        run: cargo build --release --locked
+        continue-on-error: true
+
+      - name: Release ohne Lockdatei erstellen
+        if: failure()
+        run: cargo build --release
+
+      - name: EXE als Artefakt bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: SUNLU-Filament-Tracker-Windows
+          path: target/release/sunlu_filament_tracker.exe
+          if-no-files-found: error
