@@ -13,6 +13,10 @@
 
 > Independent freeware project. It is not affiliated with SUNLU, Bambu Lab, or their official projects. Product and company names are used only to describe compatibility.
 
+### Screenshot
+
+![SUNLU Filament Tracker – English interface](docs/screenshot-en.png)
+
 ### Features
 
 - Manage spools by name, manufacturer, material, color, initial weight, remaining weight, empty-spool weight, price, storage location, and notes
@@ -87,6 +91,10 @@ Use of the software is at your own risk. No liability is accepted for data loss,
 Der **SUNLU Filament Tracker** ist eine portable Windows-Anwendung zur Verwaltung von Filamentrollen, Restbeständen, Druckhistorie, AMS-Zuordnungen und Verbrauchsdaten aus 3MF-Dateien.
 
 > Unabhängiges Freeware-Projekt. Es besteht keine Verbindung zu SUNLU, Bambu Lab oder deren offiziellen Projekten. Produkt- und Firmennamen dienen ausschließlich der Beschreibung der Kompatibilität.
+
+### Screenshot
+
+![SUNLU Filament Tracker – Deutsche Oberfläche](docs/screenshot-de.png)
 
 ### Funktionen
 
